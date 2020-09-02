@@ -32,9 +32,9 @@ export class Definition {
         let postfix = this.decoration.join(' ');
         s += (postfix === '' ? '' : ' ' + postfix);
         if (half) {
-            s += ' {';
+            s += '\n{';
         } else {
-            s += ' {\n    \n}\n';
+            s += '\n{\n    \n}\n';
         }
         return s;
     }

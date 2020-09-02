@@ -37,7 +37,7 @@ export class SourceFile {
         this._path = path.join(dirName, srcName);
 
         if (!fs.existsSync(this._path)) {
-            fs.writeFileSync(this._path, `#include "${path.basename(headerFile)}"\n\n`, 'utf-8');
+            fs.writeFileSync(this._path, `#include "${path.basename(headerFile)}"\n`, 'utf-8');
         }
     }
 
